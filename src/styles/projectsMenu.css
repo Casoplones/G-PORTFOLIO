@@ -57,10 +57,12 @@
   margin: 0;
 }
 .project-sub-container img {
-  width: 100%;
-  object-fit: cover;
+  width: 27rem;       /* ancho fijo */
+  height: 12rem;      /* alto fijo */
+  object-fit: cover;  /* mantiene proporción recortando la imagen */
   border-radius: 0.5rem 3rem 0.5rem 0.5rem;
   opacity: 0.9;
+  flex-shrink: 0;     /* evita que se reduzca en flexbox */
 }
 .project-sub-container p {
   font-size: 0.875rem;
@@ -110,8 +112,9 @@
     margin-top: 1rem;
     width: 12rem;
   }
-  .project-sub-container img {
-    width: 12rem;
+    .project-sub-container img {
+    width: 20rem;  /* mismo ancho que en escritorio */
+    height: 12rem; /* mismo alto que en escritorio */
   }
   .link-container a {
     margin-top: 0.5rem;

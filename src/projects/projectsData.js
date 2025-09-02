@@ -1,11 +1,12 @@
-import projectOne from "../assets/project-1.png";
-import projectTwo from "../assets/project-2.png";
 import projectThree from "../assets/project-3.png";
+import proyecto1 from "../assets/imagen1.png";
+import proyecto2 from "../assets/imagen2.png";
+import proyecto3 from "../assets/imagen3.png";
 
 const projects = {
   1: {
     title: "Hostal Biarritz",
-    image: projectOne,
+    image: proyecto1,
     description: (
       <>
         <p>
@@ -18,7 +19,7 @@ const projects = {
   },
   2: {
     title: "Sporta",
-    image: projectTwo,
+    image: proyecto2,
     description: (
       <>
         <p>
@@ -31,7 +32,7 @@ const projects = {
   },
   3: {
     title: "JoyMate",
-    image: projectThree,
+    image: proyecto3,
     description: (
       <>
         <p>
