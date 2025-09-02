@@ -27,13 +27,13 @@ export default function Nav() {
   const getPageTitle = () => {
     switch (location.pathname) {
       case "/":
-        return "ABOUT";
+        return "NICO";
       case "/skills":
-        return "SKILLS";
+        return "HABILIDADES";
       case "/projects":
-        return "PROJECTS";
+        return "PROYECTOS";
       case "/contact":
-        return "CONTACT";
+        return "CONTACTO";
       default:
         return "";
     }

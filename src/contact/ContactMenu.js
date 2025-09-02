@@ -39,9 +39,10 @@ export default function ContactMenu() {
       message: "Message: " + DOMPurify.sanitize(message),
     };
 
-    const serviceID = process.env.REACT_APP_EMAILJS_SERVICE_ID;
-    const templateID = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
-    const userID = process.env.REACT_APP_EMAILJS_USER_ID;
+    // Usa los IDs directamente aquí
+    const serviceID = "service_jtftb9r";
+    const templateID = "template_5i6al1e";
+    const userID = "ipzlBXho7u6dnaFXs";
 
     emailjs
       .send(serviceID, templateID, sanitizedData, userID)
@@ -74,7 +75,7 @@ export default function ContactMenu() {
     }
 
     if (!message.trim()) {
-      errors.message = "El emnsaje es obligatorio-";
+      errors.message = "El mensaje es obligatorio";
     }
 
     return errors;
