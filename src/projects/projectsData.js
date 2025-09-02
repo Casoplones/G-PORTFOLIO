@@ -4,13 +4,12 @@ import projectThree from "../assets/project-3.png";
 
 const projects = {
   1: {
-    title: "SoMe Platform",
+    title: "Hostal Biarritz",
     image: projectOne,
     description: (
       <>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Lideré el rediseño completo de la web de un hostal, desarrollando una interfaz moderna con React y Bootstrap. Optimicé el SEO y el rendimiento, alcanzando puntuaciones superiores a 90 en Lighthouse.
         </p>
       </>
     ),
@@ -18,13 +17,12 @@ const projects = {
     demo: "https://netlify.com",
   },
   2: {
-    title: "Productivity App",
+    title: "Sporta",
     image: projectTwo,
     description: (
       <>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Desarrollé una aplicación completa con React, Node.js, Express, Firebase y MySQL para la gestión centralizada de equipos de fútbol. La plataforma incluye gestión de jugadores, partidos, entrenamientos y partidos. Implementé autenticación de usuarios mediante Firebase Auth.
         </p>
       </>
     ),
@@ -32,13 +30,12 @@ const projects = {
     demo: "https://netlify.com",
   },
   3: {
-    title: "Food Delivery App",
+    title: "JoyMate",
     image: projectThree,
     description: (
       <>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Prototipé la experiencia de usuario completa en Figma. La aplicación permite a parejas organizar ideas de regalos, recordar fechas especiales y hacer seguimiento de obsequios, demostrando mi capacidad para transformar ideas escalable.
         </p>
       </>
     ),

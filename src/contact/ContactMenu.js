@@ -46,13 +46,13 @@ export default function ContactMenu() {
     emailjs
       .send(serviceID, templateID, sanitizedData, userID)
       .then((response) => {
-        console.log("Email is sent successfully!", response.text);
+        console.log("Correo enviado exitosamente.", response.text);
         setFormData(initialState);
         setErrors({});
         setIsSent(true);
       })
       .catch((error) => {
-        console.error("Email sending failed", error);
+        console.error("Error al enviar correo.", error);
       })
       .finally(() => {
         setIsLoading(false);
@@ -64,17 +64,17 @@ export default function ContactMenu() {
     const errors = {};
 
     if (!name.trim()) {
-      errors.name = "Name is required";
+      errors.name = "El nombre es obligatorio";
     }
 
     if (!email.trim()) {
-      errors.email = "Email is required";
+      errors.email = "El email es obligatorio";
     } else if (!isValidEmail(email)) {
-      errors.email = "Invalid email format";
+      errors.email = "Formato de email no válido.";
     }
 
     if (!message.trim()) {
-      errors.message = "Message is required";
+      errors.message = "El emnsaje es obligatorio-";
     }
 
     return errors;
@@ -95,7 +95,7 @@ export default function ContactMenu() {
               type="text"
               id="name"
               name="name"
-              placeholder="Name"
+              placeholder="Nombre"
               value={formData.name}
               onChange={handleChange}
               className={errors.name ? "error" : ""}
@@ -126,7 +126,7 @@ export default function ContactMenu() {
             <textarea
               id="message"
               name="message"
-              placeholder="Message"
+              placeholder="Mensaje"
               value={formData.message}
               onChange={handleChange}
               className={errors.message ? "error" : ""}
@@ -137,15 +137,15 @@ export default function ContactMenu() {
             )}
           </div>
           <button type="submit" disabled={isLoading}>
-            {isLoading ? "SENDING..." : "SUBMIT"}
+            {isLoading ? "ENVIANDO..." : "ENVIAR"}
           </button>
         </form>
       )}
       {isSent && (
         <div className="success-message">
-          <p>SUCCESS!</p>
-          <p>Your message has been successfully sent!</p>
-          <p>You can safely leave this page.</p>
+          <p>PERFECTO!!!!</p>
+          <p>Tu mensaje ha sido enviado con exito!</p>
+          <p>Ya puedes volver con tu tripulacion.</p>
         </div>
       )}
     </div>
