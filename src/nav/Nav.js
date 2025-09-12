@@ -5,7 +5,6 @@ import deadEye from "../assets/dead-eye.png";
 import stack from "../assets/stack.png";
 import envelope from "../assets/envelope.png";
 import "../styles/nav.css";
-import { motion } from "framer-motion";
 
 export default function Nav() {
   const location = useLocation();
@@ -52,39 +51,15 @@ export default function Nav() {
     const linkClass = isCurrent ? "nav-link current" : "nav-link";
 
     return (
-      <motion.div
-        whileHover={{ scale: 1.1 }}
-        whileTap={{ scale: 0.95 }}
-      >
-        <Link to={to} className={linkClass}>
-          <motion.img 
-            src={imgSrc} 
-            alt={altText}
-            whileHover={{ rotate: 10 }}
-            transition={{ type: "spring", stiffness: 300 }}
-          />
-          {isCurrent && (
-            <motion.h1 
-              className="page-title"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.2 }}
-            >
-              {pageTitle}
-            </motion.h1>
-          )}
-        </Link>
-      </motion.div>
+      <Link to={to} className={linkClass}>
+        <img src={imgSrc} alt={altText} />
+        {isCurrent && <h1 className="page-title">{pageTitle}</h1>}
+      </Link>
     );
   };
 
   return (
-    <motion.nav 
-      className={`nav ${navPositionClass}`}
-      initial={{ y: -100 }}
-      animate={{ y: 0 }}
-      transition={{ type: "spring", stiffness: 100, damping: 15 }}
-    >
+    <nav className={`nav ${navPositionClass}`}>
       {renderNavLink(
         "/",
         astronautHelmet,
@@ -94,6 +69,6 @@ export default function Nav() {
       {renderNavLink("/skills", deadEye, "deadEye icon", "nav-skills")}
       {renderNavLink("/projects", stack, "stack icon", "nav-projects")}
       {renderNavLink("contact", envelope, "envelope icon", "nav-contact")}
-    </motion.nav>
+    </nav>
   );
 }
