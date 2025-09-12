@@ -22,7 +22,7 @@ const projects = {
     description: (
       <>
         <p>
-          Desarrollé una aplicación completa con React, Node.js, Express, Firebase y MySQL para la gestión centralizada de equipos de fútbol. La plataforma incluye gestión de jugadores, partidos, entrenamientos y partidos. Implementé autenticación de usuarios mediante Firebase Auth.
+          Creé una aplicación full-stack para la gestión de equipos de fútbol con React, Node.js, Express, Firebase y MySQL, incluyendo autenticación de usuarios.
         </p>
       </>
     ),
@@ -34,7 +34,7 @@ const projects = {
     description: (
       <>
         <p>
-          Desarrollé una landing page responsive para una agencia de desarrollo web usando React, JS, Bootstrap y Vercel. La página cuenta con secciones de servicios, portafolio y contacto, optimizada para SEO y rendimiento.
+            Landing page responsiva desarrollada con React, JS, Bootstrap y Vercel para una agencia de desarrollo web. Incluye secciones de servicios, portafolio y contacto, optimizadas para SEO y rendimiento.
         </p>
       </>
     ),
