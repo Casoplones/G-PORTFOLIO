@@ -14,8 +14,7 @@ const projects = {
         </p>
       </>
     ),
-    github: "https://github.com",
-    demo: "https://netlify.com",
+    demo: "https://doyxe.github.io/hostalbiarritz/",
   },
   2: {
     title: "Sporta",
@@ -27,21 +26,19 @@ const projects = {
         </p>
       </>
     ),
-    github: "https://github.com",
     demo: "https://netlify.com",
   },
   3: {
-    title: "JoyMate",
+    title: "Doyxe",
     image: proyecto3,
     description: (
       <>
         <p>
-          Prototipé la experiencia de usuario completa en Figma. La aplicación permite a parejas organizar ideas de regalos, recordar fechas especiales y hacer seguimiento de obsequios, demostrando mi capacidad para transformar ideas escalable.
+          Desarrollé una landing page responsive para una agencia de desarrollo web usando React, JS, Bootstrap y Vercel. La página cuenta con secciones de servicios, portafolio y contacto, optimizada para SEO y rendimiento.
         </p>
       </>
     ),
-    github: "https://github.com",
-    demo: "https://netlify.com",
+    demo: "https://www.doyxe.com/",
   },
 };
 
