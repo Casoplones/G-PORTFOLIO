@@ -22,7 +22,8 @@ const projects = {
     description: (
       <>
         <p>
-          Creé una aplicación full-stack para la gestión de equipos de fútbol con React, Node.js, Express, Firebase y MySQL, incluyendo autenticación de usuarios.
+          Creé una aplicación full-stack para la gestión de equipos de fútbol con React, Node.js, Express, Firebase y MySQL, incluyendo autenticación de usuarios.<br></br>
+          *Demo de proyecto no disponible. Uso privado en curso.*
         </p>
       </>
     ),
