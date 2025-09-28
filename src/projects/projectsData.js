@@ -2,6 +2,7 @@ import projectThree from "../assets/project-3.png";
 import proyecto1 from "../assets/imagen1.png";
 import proyecto2 from "../assets/imagen2.png";
 import proyecto3 from "../assets/imagen3.png";
+import peskitos from "../assets/peskitos.png";
 
 const projects = {
   1: {
@@ -40,6 +41,18 @@ const projects = {
       </>
     ),
     demo: "https://www.doyxe.com/",
+  },
+    4: {
+    title: "Peskitos FC",
+    image: peskitos,
+    description: (
+      <>
+        <p>
+            Landing page responsiva desarrollada con JS y Bootstrap para un equipo de fútbol. Incluye secciones de historia, equipo y contacto, optimizadas para SEO y rendimiento.
+        </p>
+      </>
+    ),
+    demo: "https://www.peskitosfc.com/",
   },
 };
 
