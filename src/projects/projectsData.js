@@ -52,7 +52,7 @@ const projects = {
         </p>
       </>
     ),
-    demo: "https://www.peskitosfc.com/",
+    demo: "https://peskitosfc.com/",
   },
 };
 
