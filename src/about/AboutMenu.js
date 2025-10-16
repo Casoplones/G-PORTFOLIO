@@ -5,6 +5,7 @@ import subheadingsData from "./subheadingsData";
 import personalIcon from "../assets/moebius-triangle.png";
 import educationIcon from "../assets/upgrade.png";
 import careerIcon from "../assets/triple-corn.png";
+import cvPDF from "../assets/Nicolás_Casas_Rodriguez_CV.docx.pdf";
 
 export default class AboutMenu extends Component {
   constructor(props) {
@@ -26,6 +27,15 @@ export default class AboutMenu extends Component {
     this.setState({
       activeSubheading: subheading,
     });
+  };
+
+  handleDownloadCV = () => {
+    const link = document.createElement("a");
+    link.href = cvPDF;
+    link.download = "Nicolás_Casas_Rodriguez_CV.docx.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   render() {
@@ -52,6 +62,10 @@ export default class AboutMenu extends Component {
               onClick={() => this.handleMenuItemClick(index + 1)}
             />
           ))}
+          {/* Botón para descargar PDF con mismo estilo que los items del menú */}
+          <div className="item download-item" onClick={this.handleDownloadCV}>
+            <span className="title">MANAGER CV</span>
+          </div>
         </div>
         <div className="sub-container">
           <div className="icon-title-container">

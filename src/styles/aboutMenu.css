@@ -102,6 +102,77 @@
   padding: 0.5rem 0 0.5rem 1rem;
 }
 
+/* Botón de descarga con mismo estilo que los items del menú */
+.download-item {
+  height: 3.7rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.download-item .title {
+  font-size: 1rem;
+  padding-right: 2.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.download-item:hover {
+  background: linear-gradient(90deg, var(--transparent), var(--green) 70%);
+  border-radius: var(--radius-right);
+}
+
+.download-item:hover .title {
+  font-size: 1.2rem;
+}
+
+/* Efecto activo para el botón de descarga - usando color verde */
+.download-item.active {
+  background: linear-gradient(90deg, var(--transparent), var(--green) 70%);
+  border-radius: var(--radius-right);
+  position: relative;
+  cursor: pointer;
+}
+
+.download-item.active .title {
+  font-size: 1.5rem;
+}
+
+/* Responsive para el botón de descarga */
+@media (max-width: 700px) {
+  .download-item {
+    height: 2rem;
+  }
+  
+  .download-item .title {
+    font-size: 0.8rem;
+    padding-right: 2.5rem;
+  }
+  
+  .download-item:hover .title {
+    font-size: 1rem;
+  }
+  
+  .download-item.active .title {
+    font-size: 1rem;
+  }
+}
+
+/* Asegurar que el menú mantenga su diseño column */
+.menu {
+  width: 19rem;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  top: 60%;
+  transform: translateY(-60%);
+  left: 10vw;
+  gap: 0; /* Eliminar gap para mantener el diseño original */
+}
+
 @media (max-width: 700px) {
   .sub-container {
     right: 1rem;
